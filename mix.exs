@@ -4,8 +4,8 @@ defmodule Rfc1123DateTime.MixProject do
   def project do
     [
       app: :rfc1123_datetime,
-      version: "0.1.2",
-      elixir: "~> 1.14",
+      version: "0.1.3",
+      elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps(),

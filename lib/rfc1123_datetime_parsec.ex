@@ -119,27 +119,27 @@ defmodule Rfc1123DateTime.Parsec do
   end
 
   defp datetime__3(<<"Jul", rest::binary>>, acc, stack, context, comb__line, comb__offset) do
-    datetime__4(rest, '\a' ++ acc, stack, context, comb__line, comb__offset + 3)
+    datetime__4(rest, ~c"\a" ++ acc, stack, context, comb__line, comb__offset + 3)
   end
 
   defp datetime__3(<<"Aug", rest::binary>>, acc, stack, context, comb__line, comb__offset) do
-    datetime__4(rest, '\b' ++ acc, stack, context, comb__line, comb__offset + 3)
+    datetime__4(rest, ~c"\b" ++ acc, stack, context, comb__line, comb__offset + 3)
   end
 
   defp datetime__3(<<"Sep", rest::binary>>, acc, stack, context, comb__line, comb__offset) do
-    datetime__4(rest, '\t' ++ acc, stack, context, comb__line, comb__offset + 3)
+    datetime__4(rest, ~c"\t" ++ acc, stack, context, comb__line, comb__offset + 3)
   end
 
   defp datetime__3(<<"Oct", rest::binary>>, acc, stack, context, comb__line, comb__offset) do
-    datetime__4(rest, '\n' ++ acc, stack, context, comb__line, comb__offset + 3)
+    datetime__4(rest, ~c"\n" ++ acc, stack, context, comb__line, comb__offset + 3)
   end
 
   defp datetime__3(<<"Nov", rest::binary>>, acc, stack, context, comb__line, comb__offset) do
-    datetime__4(rest, '\v' ++ acc, stack, context, comb__line, comb__offset + 3)
+    datetime__4(rest, ~c"\v" ++ acc, stack, context, comb__line, comb__offset + 3)
   end
 
   defp datetime__3(<<"Dec", rest::binary>>, acc, stack, context, comb__line, comb__offset) do
-    datetime__4(rest, '\f' ++ acc, stack, context, comb__line, comb__offset + 3)
+    datetime__4(rest, ~c"\f" ++ acc, stack, context, comb__line, comb__offset + 3)
   end
 
   defp datetime__3(rest, _acc, _stack, context, line, offset) do
